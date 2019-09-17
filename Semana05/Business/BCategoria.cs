@@ -12,13 +12,13 @@ namespace Business
     {
         private DCategoria DCategoria = null;
 
-        public List<Categoria> Listar(int idCategoria)
+        public List<Categoria> Listar(int IdCategoria)
         {
             List<Categoria> categorias = null;
             try
             {
                 DCategoria = new DCategoria();
-                categorias = DCategoria.Listar(new Categoria { IdCategoria = idCategoria });
+                categorias = DCategoria.Listar(new Categoria { IdCategoria = IdCategoria });
             }
             catch (Exception ex)
             {
