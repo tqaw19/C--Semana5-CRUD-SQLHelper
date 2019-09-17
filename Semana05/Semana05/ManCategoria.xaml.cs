@@ -75,7 +75,23 @@ namespace Semana05
 
         private void BtnBorrar_Click(object sender, RoutedEventArgs e)
         {
+            BCategoria Bcategoria = null;
+            
+            try
+            {
+                Bcategoria = new BCategoria();
+                Bcategoria.Eliminar(ID);
 
+                    Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Comunicarse con el admin" + ex);
+            }
+            finally
+            {
+                Bcategoria = null;
+            }
         }
     }
 }
