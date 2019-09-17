@@ -23,10 +23,10 @@ namespace Semana05
     {
         public int ID { get; set; }
 
-        public ManCategoria(int id)
+        public ManCategoria(int Id)
         {
             InitializeComponent();
-            ID = ID;
+            ID = Id;
             if (ID > 0)
             {
                 BCategoria bCategoria = new BCategoria();
@@ -71,6 +71,11 @@ namespace Semana05
         private void BtnCerrar_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void BtnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

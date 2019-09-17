@@ -21,6 +21,7 @@
                 <Label Content="NUEVA CATEGORIA" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
+                <Label Content="ID"/>
                 <Label Content="ID" x:Name="lblID" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -33,7 +34,12 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="btnGrabar" Click="BtnGrabar_Click"  >Grabar</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
                 <Button x:Name="btnCerrar" Click="BtnCerrar_Click"  >Cerrar</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnBorrar" Click="BtnBorrar_Click"  >Borrar</Button>
             </StackPanel>
 
         </StackPanel>
